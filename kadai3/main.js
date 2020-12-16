@@ -8,7 +8,7 @@ function haveTask() {
   console.log('========================');
 }
 
-const taskCount = function () {
+const tasks = function () {
   for (let i = 0; i < tasklist.length; i++) {
     console.log(`${i} : ${tasklist[i]}`);
   }
@@ -16,7 +16,7 @@ const taskCount = function () {
 
 
 haveTask();
-taskCount();
+tasks();
 
 
 let question = prompt('タスクを入力してください');
@@ -26,7 +26,7 @@ if (question !== null && question !== '' && question !== 'タスクを入力し�
   tasklist.push(question);
 
   haveTask();
-  taskCount();
+  tasks();
 
   prompt('｢確認、追加、削除、終了｣の4ついずれかを入力してください');
 }

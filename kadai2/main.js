@@ -2,8 +2,9 @@
 
 let question = prompt('日本の首都は?');
 
-if (question === '東京') {
-  alert('正解です！')
-} else {
-  alert('不正解です！');
+while (question !== '東京') {
+  alert('不正解です');
+  question = prompt('日本の首都は?');
 }
+
+alert('正解です')
