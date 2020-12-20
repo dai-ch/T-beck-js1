@@ -3,14 +3,6 @@
 const tasklist = ['机を片付ける', '牛乳を買う', '散歩する'];
 const taskType = ['掃除', '買い物', '運動'];
 
-
-// const test = {
-//   test: ['a', 's', 'c'],
-//   test2: ['ff', 'gg', 'hh']
-// }
-
-
-
 function haveTask() {
   console.log('========================');
   console.log('現在持っているタスク一覧');

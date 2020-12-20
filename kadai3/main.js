@@ -1,6 +1,6 @@
 'use strict'
 
-const tasklist = ['掃除', '買い物', '散歩'];
+const taskList = ['掃除', '買い物', '散歩'];
 
 function haveTask() {
   console.log('========================');
@@ -9,8 +9,8 @@ function haveTask() {
 }
 
 const tasks = function () {
-  for (let i = 0; i < tasklist.length; i++) {
-    console.log(`${i} : ${tasklist[i]}`);
+  for (let i = 0; i < taskList.length; i++) {
+    console.log(`${i} : ${taskList[i]}`);
   }
 }
 
@@ -23,7 +23,7 @@ let question = prompt('タスクを入力してください');
 
 if (question !== null && question !== '' && question !== 'タスクを入力してください') {
   alert('新しいタスクを追加しました');
-  tasklist.push(question);
+  taskList.push(question);
 
   haveTask();
   tasks();
